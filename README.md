@@ -1,7 +1,7 @@
 # yatube_project
 Social network for bloggers
 ### Description
-Thanks to this app many bloggers will be able to sare their ideas.
+Thanks to this app many bloggers will be able to share their ideas and content.
 ### Tecnology
 Python 3.7
 Django 2.2.19
