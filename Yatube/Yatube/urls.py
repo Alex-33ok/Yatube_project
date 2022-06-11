@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('', include('posts.urls')),
+    path('', include('Posts.urls')),
     path('admin/', admin.site.urls),
     path('group_posts/<slug:slug>/',posts.material_by_id)
 ]
