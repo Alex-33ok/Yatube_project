@@ -6,7 +6,7 @@ def index(request):
     return HttpResponse('Главная страница')
 
 # Страница со списком мороженого
-def group_posts_list(request):
+def group_posts(request):
     return HttpResponse('Список постов')
 
 def group_posts_detail(request, pk):
