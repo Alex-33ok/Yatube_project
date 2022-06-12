@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 # Главная страница
 def index(request):
-    template = 'templates/posts/index.html'
+    template = 'posts/index.html'
     return render(request, template)
 
 def group_posts(request):
