@@ -9,8 +9,8 @@ def index(request):
     return render(request, template, context)
 
 def group_posts(request):
-    template = 'posts/group_list.html'
-    title= 'Здесь будет информация о группах проекта Yatube ЧЛЕН'
+    template = 'posts/group_posts.html'
+    title= 'Здесь будет информация о группах проекта Yatube'
     context = {'title': title}
     return render(request, template, context)
 
