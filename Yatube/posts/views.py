@@ -9,7 +9,7 @@ def index(request):
     return render(request, template, context)
 
 def group_posts(request):
-    template = 'posts/group_posts.html'
+    template = 'posts/group_list.html'
     title= 'Здесь будет информация о группах проекта Yatube'
     context = {'key': 'Здесь будет информация о группах проекта Yatube'}
     return render(request, template, context)
