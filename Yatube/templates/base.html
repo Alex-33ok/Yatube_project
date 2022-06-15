@@ -3,15 +3,13 @@
 <html lang="ru">
   <head>
     {% block title %}
-    {% include 'includes/header.html' %}
     {% endblock %}
   </head>
   <body>
+      {% include 'includes/header.html' %}
       <h1>Главный вопрос - Правильно ли я Все сделал?</h1>
   </body>
   <footer>
-    {% block content %}
     {% include 'includes/footer.html' %}
-    {% endblock %}
   </footer>
 </html>
