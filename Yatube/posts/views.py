@@ -13,7 +13,7 @@ def index(request):
 def group_posts(request):
     template = 'posts/index.html'
     dog = {'groups': 'Здесь будет информация о группах проекта Yatube'}
-    return render(request, dog)
+    return render(request, template, dog)
 
 def group_posts_detail(request, pk):
     return HttpResponse(f'Пост номер {pk}')
