@@ -6,8 +6,7 @@ from django.template import loader
 def index(request):
     template = 'posts/index.html'
     title= 'Это мой Title'
-    context = {'title':title, 'text':'Это главная страница проекта Yatube ХУЙ'}
-    dog = {'groups': 'Здесь будет информация о группах проекта Yatube ЧЛЕН '}
+    context = {'title':title, 'text':'Это главная страница проекта Yatube'}
     return render(request, template, context)
 
 def group_posts(request):
