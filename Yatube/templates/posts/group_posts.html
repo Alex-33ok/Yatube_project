@@ -2,12 +2,9 @@
 <html lang="ru"> <!-- Язык сайта - русский -->
 {% extends 'base.html'%}
 {% block title %}
-{% block content %}
-<html lang="ru">
-  <body>
-  <h1> {{ title }} </h1>
-  </body>
-  <footer>
-    <h1></h1>
-  </footer>
-</html>
+  Посты сообщества {{ group }}
+{% endblock %}
+
+{block content}
+<h1> {{ key }} </h1>
+{end block}
