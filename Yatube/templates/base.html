@@ -1,0 +1,17 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {% block title %}
+    {% include 'includes/header.html' %}
+    {% block content %}
+  </head>
+  <body>
+  {% block content %}
+      <h1>Главный вопрос</h1>
+    {% endblock %}
+  </body>
+  <footer>
+    {% include 'includes/footer.html' %}
+  </footer>
+</html>
