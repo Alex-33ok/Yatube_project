@@ -4,14 +4,14 @@
   <head>
     {% block title %}
     {% include 'includes/header.html' %}
-      {% block content %}
+    {% endblock %}
   </head>
   <body>
-  {% block content %}
-      <h1>Главный вопрос</h1>
-    {% endblock %}
+      <h1>Главный вопрос - Правильно ли я Все сделал?</h1>
   </body>
   <footer>
+    {% block content %}
     {% include 'includes/footer.html' %}
+    {% endblock %}
   </footer>
 </html>
