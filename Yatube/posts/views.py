@@ -10,7 +10,8 @@ def index(request):
     return render(request, template, context)
 
 def group_posts(request):
-    return HttpResponse('Список постов')
+    context = {'groups': 'Здесь будет информация о группах проекта Yatube'}
+    return render(context)
 
 def group_posts_detail(request, pk):
     return HttpResponse(f'Пост номер {pk}')

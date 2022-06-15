@@ -5,11 +5,13 @@
     {% include 'includes/header.html' %}
     {% block title %}
     {% endblock %}
+    <title>{{ title }}</title>
   </head>
   <body>
-      <h1>Главный вопрос - Правильно ли я Все сделал?</h1>
+    <h1>{{ text }} </h1>
   </body>
   <footer>
+    {{ groups }}
     {% include 'includes/footer.html' %}
   </footer>
 </html>
