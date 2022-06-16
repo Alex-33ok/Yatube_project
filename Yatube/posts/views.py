@@ -7,9 +7,7 @@ def index(request):
     context = {'text':'Это главная страница проекта Yatube'}
     return render(request, 'posts/index.html', context)
 
-def group_posts(request):
-    #context = {'key':'Здесь будет информация о группах проекта Yatube'}
-    return render(request, 'posts/group_list.html')
+def group_posts(request, slug):
+    context = {'group' : group, 'group_posts' : group_posts }
+    return render(request, 'posts/group_list.html', context)
 
-def group_posts_detail(request, pk):
-    return HttpResponse(f'Пост номер {pk}')
