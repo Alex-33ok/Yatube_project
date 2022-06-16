@@ -8,6 +8,6 @@ def index(request):
     return render(request, 'posts/index.html', context)
 
 def group_posts(request, slug):
-    context = {'group' : group, 'group_posts' : group_posts }
+    context = {'group': group, 'group_posts': group_posts}
     return render(request, 'posts/group_list.html', context)
 
