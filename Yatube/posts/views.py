@@ -8,6 +8,6 @@ def index(request):
     return render(request, 'posts/index.html', context)
 
 def group_posts(request, pk):
-    context = { 'title':'Это главная страница проекта group Yatube'}
+    context = { 'text':'Здесь будет информация о группах проекта Yatube'}
     return render(request, 'posts/group_list.html', context)
 
