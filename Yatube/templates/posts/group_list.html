@@ -4,5 +4,15 @@
 {{text}}
 {% endblock %}
 {% block content %}
-<h1> {{text}} </h1>
+
+{% for post in posts %}
+<ul>
+<li>{{post.author.first_name}} {{post.author.last_name}}</li>
+<li> {{post.pub_date}}</li>
+</ul>
+<p> {{post.text}} </p>
+{% if post.group %}
+<a href="{% url 'posts:group_list' post.group.slug %}">все записи группы</a>
+{% endif %}
+{% endfor %}
 {% endblock %}
